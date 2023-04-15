@@ -1,0 +1,66 @@
+:root {
+    --icon-size: 15px
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.slider {
+    background: url("./assets/images/01.jpg") no-repeat center center/cover;
+    width: 60%;
+    aspect-ratio: 1.5;
+    position: relative;
+}
+
+.btn-icon {
+    background-color: #3333;
+    width: var(--icon-size);
+    top: calc((100% - var(--icon-size))/2);
+    aspect-ratio: 1;
+    /* opacity: .3; */
+    transition: all .1s ease-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.btn-icon:hover {
+    background-color: #3339;
+    cursor: pointer;
+}
+
+#btn-left {
+    position: absolute;
+    left: 0;
+    /* opacity: .7; */
+
+}
+#btn-right {
+    position: absolute;
+    right: 0;
+}
+
+#btn-left::after {
+    content: "˂";
+    color: white;
+
+}
+
+#btn-right::after {
+    content: "˃";
+    color: white;
+
+
+}
