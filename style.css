@@ -21,6 +21,7 @@ body {
     width: 60%;
     aspect-ratio: 1.7;
     position: relative;
+    transition: all 1.5s ease-in-out;
 }
 
 .btn-icon {
