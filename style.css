@@ -1,5 +1,5 @@
 :root {
-    --icon-size: 15px
+    --icon-size: 50px
 }
 
 * {
@@ -19,7 +19,7 @@ body {
 .slider {
     background: url("./assets/images/01.jpg") no-repeat center center/cover;
     width: 60%;
-    aspect-ratio: 1.5;
+    aspect-ratio: 1.7;
     position: relative;
 }
 
@@ -34,18 +34,17 @@ body {
     justify-content: center;
     align-items: center;
     font-weight: bold;
+    font-size: 40px;
 }
 
 .btn-icon:hover {
-    background-color: #3339;
+    background-color: #2229;
     cursor: pointer;
 }
 
 #btn-left {
     position: absolute;
     left: 0;
-    /* opacity: .7; */
-
 }
 #btn-right {
     position: absolute;
@@ -61,6 +60,4 @@ body {
 #btn-right::after {
     content: "˃";
     color: white;
-
-
 }
